@@ -7,8 +7,9 @@ import { pathToFileURL } from "node:url"
 const CONFIG_FILENAME = "anythropic.json"
 const OPENCODE_CONFIG_DIR = join(homedir(), ".config", "opencode")
 const CACHE_DIR = join(homedir(), ".cache", "opencode-anythropic-auth")
-const DEFAULT_REPO = "https://github.com/lenstr/opencode-anthropic-auth"
-const DEFAULT_BRANCH = "fix/mcp-tool-prefix"
+const DEFAULT_REPO = "https://github.com/anomalyco/opencode-anthropic-auth"
+const DEFAULT_BRANCH = "master"
+const DEFAULT_REF = "70233ba2f93bfd81254566cfd63ee5a470c1fd16"
 
 const createLogger = (debug) => ({
 	log: (...args) => debug && console.log("[anythropic-auth]", ...args),
@@ -226,7 +227,7 @@ export async function AnthropicAuthPlugin(input) {
 
 	const repoUrl = config?.repo || DEFAULT_REPO
 	const branch = config?.branch || DEFAULT_BRANCH
-	const ref = config?.ref
+	const ref = config?.ref || DEFAULT_REF
 	const forceUpdate = config?.forceUpdate || false
 
 	log.log(`Using repository: ${repoUrl}`)

@@ -46,9 +46,9 @@ If you want to use a custom fork, create an `anythropic.json` file in one of the
 
 | Option | Type | Community Verified Default | Description |
 |--------|------|----------------------------|-------------|
-| `repo` | string | `lenstr/opencode-anthropic-auth` | Git repository URL |
-| `branch` | string | `fix/mcp-tool-prefix` | Branch to checkout |
-| `ref` | string | - | Specific commit/tag (overrides branch) |
+| `repo` | string | `anomalyco/opencode-anthropic-auth` | Git repository URL |
+| `branch` | string | `master` | Branch to checkout |
+| `ref` | string | `70233ba` | Specific commit/tag (overrides branch) |
 | `forceUpdate` | boolean | `false` | Force re-clone on every load |
 | `debug` | boolean | `false` | Enable debug logging to console |
 
