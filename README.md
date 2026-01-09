@@ -12,6 +12,20 @@ Add to your `opencode.json`:
 }
 ```
 
+### Disabling Default Plugins
+
+By default, OpenCode loads builtin plugins (`opencode-anthropic-auth`, `opencode-copilot-auth`) alongside your custom plugins. To use **only** your custom fork and prevent the builtin from loading:
+
+```bash
+OPENCODE_DISABLE_DEFAULT_PLUGINS=1 opencode
+```
+
+Or add to your shell profile:
+
+```bash
+export OPENCODE_DISABLE_DEFAULT_PLUGINS=1
+```
+
 ## Configuration
 
 Create an `anythropic.json` file in one of these locations (searched in order):
@@ -37,20 +51,6 @@ Create an `anythropic.json` file in one of these locations (searched in order):
 | `debug` | boolean | `false` | Enable debug logging to console |
 
 All fields are optional. Without a config file, the plugin loads the default `opencode-anthropic-auth` from Anomaly.
-
-## Disabling Default Plugins
-
-By default, OpenCode loads builtin plugins (`opencode-anthropic-auth`, `opencode-copilot-auth`) alongside your custom plugins. To use **only** your custom fork and prevent the builtin from loading:
-
-```bash
-OPENCODE_DISABLE_DEFAULT_PLUGINS=1 opencode
-```
-
-Or add to your shell profile:
-
-```bash
-export OPENCODE_DISABLE_DEFAULT_PLUGINS=1
-```
 
 ## How It Works
 
