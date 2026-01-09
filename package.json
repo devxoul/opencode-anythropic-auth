@@ -1,6 +1,6 @@
 {
 	"name": "opencode-anythropic-auth",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Load working opencode-anthropic-auth plugin implementation from the community",
 	"main": "./index.mjs",
 	"type": "module",
