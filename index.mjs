@@ -7,8 +7,8 @@ import { pathToFileURL } from "node:url"
 const CONFIG_FILENAME = "anythropic.json"
 const OPENCODE_CONFIG_DIR = join(homedir(), ".config", "opencode")
 const CACHE_DIR = join(homedir(), ".cache", "opencode-anythropic-auth")
-const DEFAULT_REPO = "https://github.com/anomalyco/opencode-anthropic-auth.git"
-const DEFAULT_BRANCH = "main"
+const DEFAULT_REPO = "https://github.com/lenstr/opencode-anthropic-auth"
+const DEFAULT_BRANCH = "fix/mcp-tool-prefix"
 
 const createLogger = (debug) => ({
 	log: (...args) => debug && console.log("[anythropic-auth]", ...args),

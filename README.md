@@ -30,8 +30,8 @@ Create an `anythropic.json` file in one of these locations (searched in order):
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `repo` | string | `https://github.com/anomalyco/opencode-anthropic-auth.git` | Git repository URL |
-| `branch` | string | `main` | Branch to checkout |
+| `repo` | string | `https://github.com/lenstr/opencode-anthropic-auth` | Git repository URL |
+| `branch` | string | `fix/mcp-tool-prefix` | Branch to checkout |
 | `ref` | string | - | Specific commit/tag (overrides branch) |
 | `forceUpdate` | boolean | `false` | Force re-clone on every load |
 | `debug` | boolean | `false` | Enable debug logging to console |
