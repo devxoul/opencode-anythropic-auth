@@ -28,7 +28,9 @@ export OPENCODE_DISABLE_DEFAULT_PLUGINS=1
 
 ## Configuration
 
-Create an `anythropic.json` file in one of these locations (searched in order):
+**Zero-config by default** — this plugin ships with a community-verified fork that just works. No configuration needed.
+
+If you want to use a custom fork, create an `anythropic.json` file in one of these locations:
 
 1. Project root (same directory as `opencode.json`)
 2. OpenCode config directory (`~/.config/opencode/`)
@@ -42,15 +44,15 @@ Create an `anythropic.json` file in one of these locations (searched in order):
 
 ### Configuration Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `repo` | string | `https://github.com/lenstr/opencode-anthropic-auth` | Git repository URL |
+| Option | Type | Community Verified Default | Description |
+|--------|------|----------------------------|-------------|
+| `repo` | string | `lenstr/opencode-anthropic-auth` | Git repository URL |
 | `branch` | string | `fix/mcp-tool-prefix` | Branch to checkout |
 | `ref` | string | - | Specific commit/tag (overrides branch) |
 | `forceUpdate` | boolean | `false` | Force re-clone on every load |
 | `debug` | boolean | `false` | Enable debug logging to console |
 
-All fields are optional. Without a config file, the plugin loads the default `opencode-anthropic-auth` from Anomaly.
+All fields are optional. Without a config file, the plugin automatically uses the community-verified version — actively maintained and tested by the community.
 
 ## How It Works
 
